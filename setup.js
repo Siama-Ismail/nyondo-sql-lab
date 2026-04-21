@@ -31,3 +31,24 @@ insertAll([
 
 const rows = db.prepare('SELECT * FROM products').all();
 console.log(rows);
+
+
+
+db.exec(`
+CREATE TABLE IF NOT EXISTS users (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT NOT NULL,
+  password TEXT NOT NULL
+)
+`);
+
+const insertUsers = db.prepare('INSERT INTO users (username, password) VALUES (?, ?)');
+const insertAllUsers = db.transaction((rows) => {
+  for (const r of rows) insertUsers.run(...r);
+});
+
+insertAllUsers([
+  ['alice', 'password123'],
+  ['bob', 'qwerty'],
+  ['charlie', 'letmein']
+]);
