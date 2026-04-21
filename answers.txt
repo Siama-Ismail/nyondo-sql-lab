@@ -1,2 +1,239 @@
-ACAYO SIAMA ISAMAIL
-4/21/2026
+NAME:ACAYO SIAMA ISAMAIL
+DATE:4/21/2026
+
+
+
+ISMAIL@DESKTOP-HMTTPU7 MINGW64 ~/OneDrive/Desktop/cd Document
+$ cd "nyondo-sql-lab
+> node setup.js
+> node setup.js
+> clear
+> ^C
+
+ISMAIL@DESKTOP-HMTTPU7 MINGW64 ~/OneDrive/Desktop/cd Document
+$ ^C
+
+ISMAIL@DESKTOP-HMTTPU7 MINGW64 ~/OneDrive/Desktop/cd Document
+$ node setup.js
+node:internal/modules/cjs/loader:1459
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\ISMAIL\OneDrive\Desktop\cd Document\setup.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1456:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.14.1
+
+ISMAIL@DESKTOP-HMTTPU7 MINGW64 ~/OneDrive/Desktop/cd Document
+$ cd "nyondo-sql-lab"
+
+ISMAIL@DESKTOP-HMTTPU7 MINGW64 ~/OneDrive/Desktop/cd Document/nyondo-sql-lab (main)
+$ ls
+'mkdir screenshots'   setup.js  'touch answers.txt'
+
+ISMAIL@DESKTOP-HMTTPU7 MINGW64 ~/OneDrive/Desktop/cd Document/nyondo-sql-lab (main)
+$ node setup.js
+[
+  {
+    id: 1,
+    name: 'Cement (bag)',
+    description: 'Portland cement 50kg bag',
+    price: 35000
+  },
+  {
+    id: 2,
+    name: 'Iron Sheet 3m',
+    description: 'Gauge 30 roofing sheet 3m long',
+    price: 110000
+  },
+  {
+    id: 3,
+    name: 'Paint 5L',
+    description: 'Exterior wall paint white 5L',
+    price: 60000
+  },
+  {
+    id: 4,
+    name: 'Nails 1kg',
+    description: 'Common wire nails 1kg pack',
+    price: 12000
+  },
+  {
+    id: 5,
+    name: 'Timber 2x4',
+    description: 'Pine timber plank 2x4 per metre',
+    price: 25000
+  }
+]
+
+ISMAIL@DESKTOP-HMTTPU7 MINGW64 ~/OneDrive/Desktop/cd Document/nyondo-sql-lab (main)
+$ git add .
+
+ISMAIL@DESKTOP-HMTTPU7 MINGW64 ~/OneDrive/Desktop/cd Document/nyondo-sql-lab (main)
+$ git commit -m "Task 1 and 2 complete - GitHub setup and bulding data base " 
+[main (root-commit) c2298e4] Task 1 and 2 complete - GitHub setup and bulding data base
+ 4 files changed, 35 insertions(+)
+ create mode 100644 answers.txt
+ create mode 100644 mkdir screenshots
+ create mode 100644 nyondo_stock.db
+ create mode 100644 setup.js
+
+ISMAIL@DESKTOP-HMTTPU7 MINGW64 ~/OneDrive/Desktop/cd Document/nyondo-sql-lab (main)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 1.44 KiB | 737.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Siama-Ismail/nyondo-sql-lab
+ * [new branch]      main -> main
+
+ISMAIL@DESKTOP-HMTTPU7 MINGW64 ~/OneDrive/Desktop/cd Document/nyondo-sql-lab (main)
+$ 
+
+
+ISMAIL@DESKTOP-HMTTPU7 MINGW64 ~/OneDrive/Desktop/cd Document/nyondo-sql-lab (main)
+$ node queries.js
+Query A: [
+  {
+    id: 1,
+    name: 'Cement (bag)',
+    description: 'Portland cement 50kg bag',
+    price: 35000
+  },
+  {
+    id: 2,
+    name: 'Iron Sheet 3m',
+    description: 'Gauge 30 roofing sheet 3m long',
+    price: 110000
+  },
+  {
+    id: 3,
+    name: 'Paint 5L',
+    description: 'Exterior wall paint white 5L',
+    price: 60000
+  },
+  {
+    id: 4,
+    name: 'Nails 1kg',
+    description: 'Common wire nails 1kg pack',
+    price: 12000
+  },
+  {
+    id: 5,
+    name: 'Timber 2x4',
+    description: 'Pine timber plank 2x4 per metre',
+    price: 25000
+  }
+]
+Query B: [
+  { name: 'Cement (bag)', price: 35000 },
+  { name: 'Iron Sheet 3m', price: 110000 },
+  { name: 'Paint 5L', price: 60000 },
+  { name: 'Nails 1kg', price: 12000 },
+  { name: 'Timber 2x4', price: 25000 }
+]
+Query C: [
+  {
+    id: 3,
+    name: 'Paint 5L',
+    description: 'Exterior wall paint white 5L',
+    price: 60000
+  }
+]
+Query D: [
+  {
+    id: 2,
+    name: 'Iron Sheet 3m',
+    description: 'Gauge 30 roofing sheet 3m long',
+    price: 110000
+  }
+]
+Query E: [
+  {
+    id: 2,
+    name: 'Iron Sheet 3m',
+    description: 'Gauge 30 roofing sheet 3m long',
+    price: 110000
+  },
+  {
+    id: 3,
+    name: 'Paint 5L',
+    description: 'Exterior wall paint white 5L',
+    price: 60000
+  },
+  {
+    id: 1,
+    name: 'Cement (bag)',
+    description: 'Portland cement 50kg bag',
+    price: 35000
+  },
+  {
+    id: 5,
+    name: 'Timber 2x4',
+    description: 'Pine timber plank 2x4 per metre',
+    price: 25000
+  },
+  {
+    id: 4,
+    name: 'Nails 1kg',
+    description: 'Common wire nails 1kg pack',
+    price: 12000
+  }
+]
+Query F: [
+  {
+    id: 2,
+    name: 'Iron Sheet 3m',
+    description: 'Gauge 30 roofing sheet 3m long',
+    price: 110000
+  },
+  {
+    id: 3,
+    name: 'Paint 5L',
+    description: 'Exterior wall paint white 5L',
+    price: 60000
+  }
+]
+Query G: [
+  {
+    id: 1,
+    name: 'Cement (bag)',
+    description: 'Portland cement 50kg bag',
+    price: 38000
+  },
+  {
+    id: 2,
+    name: 'Iron Sheet 3m',
+    description: 'Gauge 30 roofing sheet 3m long',
+    price: 110000
+  },
+  {
+    id: 3,
+    name: 'Paint 5L',
+    description: 'Exterior wall paint white 5L',
+    price: 60000
+  },
+  {
+    id: 4,
+    name: 'Nails 1kg',
+    description: 'Common wire nails 1kg pack',
+    price: 12000
+  },
+  {
+    id: 5,
+    name: 'Timber 2x4',
+    description: 'Pine timber plank 2x4 per metre',
+    price: 25000
+  }
+]
